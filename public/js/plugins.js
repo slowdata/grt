@@ -1481,10 +1481,7 @@ function onYouTubePlayerAPIReady() {
 			//Get video info from FEEDS API
 
 			if (!(jQuery.browser.msie && jQuery.browser.version <= 9)) {
-        // jQuery.getJSON(jQuery.mbYTPlayer.locationProtocol + '//gdata.youtube.com/feeds/api/videos/' + YTPlayer.videoID + '?v=2&alt=jsonc', function (data, status, xhr) {
-        jQuery.getJSON('https://noembed.com/embed',
-          { format: 'json', url: 'https://www.youtube.com/watch?v=' + YTPlayer.videoID },
-          function (data, status, xhr) {
+				jQuery.getJSON(jQuery.mbYTPlayer.locationProtocol + '//gdata.youtube.com/feeds/api/videos/' + YTPlayer.videoID + '?v=2&alt=jsonc', function (data, status, xhr) {
 					YTPlayer.dataReceived = true;
 					YTPlayer.videoData = data.data;
 					jQuery(YTPlayer).trigger("YTPChanged");
