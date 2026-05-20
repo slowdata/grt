@@ -428,6 +428,21 @@ h6 { font-size: 16px; }
 	left: 0px;
 	right: 0px;
 }
+.arlo_tm_hero .video_background{
+	background-image: url('../img/vista_aerea_padel_campos_todos.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.arlo_tm_hero #background-video{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 0;
+}
 .arlo_tm_hero .background .image{
 	position: absolute;
 	top: 0px;
